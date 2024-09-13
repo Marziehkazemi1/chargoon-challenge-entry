@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React from 'react';
+import React, { useReducer } from 'react';
 import { ContextMenuTrigger, ContextMenu, ContextMenuItem } from 'rctx-contextmenu';
 
 export function ContextMenuTriggerEx({ id, title }) {

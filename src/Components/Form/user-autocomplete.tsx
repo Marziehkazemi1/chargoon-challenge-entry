@@ -2,8 +2,11 @@ import { AutoComplete, Button } from 'antd';
 import React, { useEffect, useRef, useState } from 'react';
 import { getUsers } from '../../transportLayer';
 
+interface Props {
+  setUserComplete: any;
+}
 
-const UserAutoComplete: React.FC = () => {
+const UserAutoComplete = ({setUserComplete}: Props) => {
   const orginalOptions = useRef([]);
   const [options, setOptions] = useState<{ label: string; value: string }[]>([]);
 
@@ -23,7 +26,12 @@ const UserAutoComplete: React.FC = () => {
 
   const onSelect = (data: string) => {
     console.log('onSelect', data);
+    setUserComplete(data)
   };
+
+  const addUser = () => {
+    
+  }
 
   return (
     <>
@@ -34,7 +42,7 @@ const UserAutoComplete: React.FC = () => {
         onSearch={onSearch}
         placeholder="جستجوی کاربر"
       />
-     <Button >افزودن</Button>
+     <Button onClick={addUser}>افزودن</Button>
     </>
   );
 };

@@ -1,0 +1,35 @@
+.table-container{
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+ .table, th, td {
+    border: 1px solid gray;
+}
+
+ th, td {
+    padding: 8px;
+    text-align: start;
+    cursor: pointer;
+}
+
+th {
+     background-color: #f2f2f2;
+}
+
+.save-btn{
+    background-color: cornflowerblue;
+    border: none;
+    color: #fff;
+    width: 10%;
+    padding: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}

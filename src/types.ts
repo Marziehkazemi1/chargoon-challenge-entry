@@ -11,4 +11,20 @@ export interface NodeType {
 	data?: any[];
 	hierarchy: string[];
 	accesses: string[];
+	code?: string;
+}
+
+export interface ViewModel {
+	showEdit?: boolean;
+	cutNode: NodeType;
+	showTable: boolean;
+	selectedItem: any;
+	treeData: any[];
+	item?: any
+}
+
+export interface TableType {
+	key: string;
+	code: string;
+	isDefault: boolean;
 }

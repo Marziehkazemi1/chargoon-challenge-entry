@@ -1,0 +1,41 @@
+.search-result-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.search-result-icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.tree-wrap{
+  position: relative;
+  min-height: 100vh;
+}
+
+.search-result-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+svg{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.search-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    right: 10px;
+    top: 5px;
+    margin-bottom: 10px;
+}
